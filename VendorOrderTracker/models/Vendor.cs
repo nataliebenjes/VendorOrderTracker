@@ -14,6 +14,7 @@ namespace VendorOrderTracker.Models
     public Vendor(string vendorName)
     { //this is Vendor constructor
       Name = vendorName;
+
       _allthevendors.Add(this); //adds the vendor to _allthevendors List
       Id = _allthevendors.Count;
       Orders = new List<Order>{}; //Orders property is empty list od Order objects

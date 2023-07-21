@@ -54,7 +54,17 @@ namespace VendorOrderTracker.Tests
       Vendor newVendor = new Vendor(vendor1);
       Vendor newVendor2 = new Vendor(vendor2);
       Vendor result = Vendor.Find(2);
-      Assert.AreEqual(newVendor2, result)
+      Assert.AreEqual(newVendor2, result);
+    }
+    [TestMethod]
+    public void AddOrder_OrderIsCorrelatedWithVendor_OrderList()
+    {
+        string title = "27 breads";
+        string description = "one rye, five sourdough, one olive, twenty whole wheat";
+        int price = 50;
+        string date = "2017-06-01";
+        Order newOrder = new Order(title, description, price, date);
+
     }
   }
 }
