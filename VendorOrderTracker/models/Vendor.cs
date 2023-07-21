@@ -22,9 +22,9 @@ namespace VendorOrderTracker.Models
     {
       _allthevendors.Clear();
     }
-    // public static List<Vendor> GetAll()
-    // {
-    //   return _allthevendors;
-    // }
+    public static List<Vendor> GetAll()
+    {
+      return _allthevendors;
+    }
   }
 }
