@@ -18,5 +18,13 @@ namespace VendorOrderTracker.Models
       Id = _allthevendors.Count;
       Orders = new List<Order>{}; //Orders property is empty list od Order objects
     }
+    public static void ClearAll()
+    {
+      _allthevendors.Clear();
+    }
+    // public static List<Vendor> GetAll()
+    // {
+    //   return _allthevendors;
+    // }
   }
 }

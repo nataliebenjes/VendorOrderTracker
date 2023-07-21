@@ -5,6 +5,6 @@ using System;
 
 namespace VendorOrderTracker.Tests
 {
-    [TestClass]
-    public class 
+    // [TestClass]
+    // public class 
 }
