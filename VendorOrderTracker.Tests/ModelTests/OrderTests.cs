@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MusicOrganizer.Models;
+using VendorOrderTracker.Models;
 using System.Collections.Generic;
 using System;
 
-namespace MusicOrganizer.Tests
+namespace VendorOrderTracker.Tests
 {
     [TestClass]
-    public class AlbumTests : IDisposable
+    public class 
 }
