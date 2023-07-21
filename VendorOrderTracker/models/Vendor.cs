@@ -26,5 +26,13 @@ namespace VendorOrderTracker.Models
     {
       return _allthevendors;
     }
+    public static Vendor Find(int searchId)
+    {
+      return _allthevendors[searchId-1];
+    }
+    public void AddOrder(Order order)
+    {
+      Orders.Add(order);
+    }
   }
 }
