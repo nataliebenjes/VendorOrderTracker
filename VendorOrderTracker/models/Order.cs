@@ -13,10 +13,26 @@ namespace VendorOrderTracker.Models
 
     public Order(string title, string description, int price, string date)
     {
-        Title = title;
-        Description = description;
-        Price = price;
-        Date = date;
+      Title = title;
+      Description = description;
+      Price = price;
+      Date = date;
+      Date = date;
+      _alltheorders.Add(this);
+      Id = _alltheorders.Count;
+    }
+    public static List<Order> GetAll()
+    {
+      return _alltheorders;
+    }
+
+    public static void ClearAll()
+    {
+      _alltheorders.Clear();
+    }
+    public static Order Find(int searchId)
+    {
+      return _alltheorders[searchId - 1];
     }
   }
 }
