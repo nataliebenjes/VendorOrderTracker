@@ -17,7 +17,6 @@ namespace VendorOrderTracker.Models
       Description = description;
       Price = price;
       Date = date;
-      Date = date;
       _alltheorders.Add(this);
       Id = _alltheorders.Count;
     }

@@ -18,15 +18,28 @@ namespace VendorOrderTracker.Tests
       Order newOrder = new Order("test", "test", 44, "test");
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
-    // [TestMethod]
-    // public void GetTitle_ReturnTitle_String()
-    // {
-    //   string title = "olive bread";
-    //   Order newOrder = new Order(title);
-    //   string result = newOrder.Title;
-    //   Assert.AreEqual(title, result);
-    // }
+    [TestMethod]
+    public void GetTitle_ReturnTitle_String()
+    {
+      string title = "olive bread";
+      string description = "olive bread order";
+      int price = 3;
+      string date = "date";
+      Order newOrder = new Order(title, description, price, date);
+      string result = newOrder.Title;
+      Assert.AreEqual(title, result);
+    }
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      // Arrange
+      List<Order> newOrder = new List<Order> { };
 
+      // Act
+      List<Order> result = Order.GetAll();
+
+      // Assert
+      CollectionAssert.AreEqual(newOrder, result);
+    }
   }
-
 }
