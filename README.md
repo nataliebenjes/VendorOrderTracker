@@ -2,9 +2,9 @@
 
 ### By Natalie Benjes
 
-## What Is This?
+## Description
 
- Pierre's bakery is expanding, and he needs a reliable way to track his vendors and their orders. To meet his requirements, we have built the "Vendor and Order Tracker" using the Model-View-Controller (MVC) architecture. This web application will assist Pierre in managing his business relationships and orders efficiently.
+ Pierre's bakery is expanding, and he needs a reliable way to track his vendors and their orders. To meet his requirements, I have built the "Vendor and Order Tracker" using the Model-View-Controller (MVC) architecture. This web application will assist Pierre in managing his business relationships and orders efficiently.
 
 ## Technologies Used
 1. C# and .NET Core
